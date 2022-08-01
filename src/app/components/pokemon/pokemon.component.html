@@ -1,0 +1,46 @@
+
+<div class="padding-bottom">
+  <div class="text-center">
+    <div  class="head padding-bottom">
+      <div class="text-left padding-bottom ">
+        <label>Listado de Pókemon</label>
+      </div>
+
+      <div class="grid-container">
+        <div class="text-left">
+          <form [formGroup]="formGroup">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+            <input type="text" placeholder="&#xF002; Buscar" formControlName="input"  (ngModelChange)="getPokemon(formGroup.controls['input'].value)" />
+          </form>
+        </div>
+
+        <div class="text-right">
+          <button>
+            <i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+              </svg>
+              &nbsp;
+              <span>Nuevo</span>
+            </i>
+
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="padre text-center padding-bottom">
+    <app-poke-table [pokemonList]="pokemonList" (event)="selectPokemon($event)"></app-poke-table>
+  </div>
+
+  <div class="text-center box-container">
+    <app-pokemon-form [pokemonSelected]="pokemonSelected" (event)="getPokemon($event)"></app-pokemon-form>
+  </div>
+
+
+</div>
+
+

@@ -1,0 +1,57 @@
+
+
+button {
+  border-radius: 2px;
+  border: rgb(106, 86, 194) solid;
+  background-color: rgb(106, 86, 194);
+  color: white;
+  font-size: small;
+  height: 30px;
+  width: 110px;
+}
+
+.button-disambled {
+  border-radius: 2px;
+  border: rgba(106, 86, 194, 0.39);
+  background-color: rgba(106, 86, 194, 0.39);
+  color: white;
+  font-size: small;
+  height: 30px;
+  width: 110px;
+}
+
+
+
+input {
+  width: 65%;
+}
+
+
+.grid-container-form {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+
+svg, span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+}

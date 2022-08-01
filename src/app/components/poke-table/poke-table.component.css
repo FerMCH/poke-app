@@ -1,0 +1,86 @@
+table {
+  width: 80%;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: white;
+  border-collapse: collapse;
+
+  min-width: 360px;
+  width: 80%;
+  max-width: 940px;
+}
+
+th {
+  font-weight: bold;
+  color: black;
+  font-size: small;
+}
+
+svg, span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+table, td, th {
+
+  border: rgba(167, 167, 167, 0.692) 1px solid;
+  text-align: center;
+}
+
+th.mat-header-cell {
+  text-align: center !important;
+}
+
+
+
+button:hover {
+  background-color: rgb(106, 86, 194);;
+  border: rgb(106, 86, 194) 1px solid;
+  color: white;
+  border-radius: 4px;
+}
+
+td,th {
+  height: 65px;
+  width: 20%;
+}
+
+button {
+  border-radius: 2px;
+  border: rgb(255, 255, 255) solid;
+  background-color: rgb(255, 255, 255);
+  font-size: medium;
+  height: 30px;
+  color: rgb(106, 86, 194);
+  width: 70%;
+}
+
+@media screen and (min-width: 650px) {
+
+  .chico {
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width: 650px) {
+
+  .grande {
+    display: none;
+  }
+  th {
+    width: 20%;
+  }
+
+  button {
+    font-size: small;
+    height: 30px;
+    width: 80%;
+  }
+
+  .grid-container {
+    grid-template-columns: 100%;
+  }
+
+}

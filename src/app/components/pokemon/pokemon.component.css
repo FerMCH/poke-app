@@ -1,0 +1,63 @@
+
+.head {
+  width: 80%;
+  max-width: 940px;
+  margin:auto;
+  position:relative;
+  padding-top: 10px;
+  min-width: 360px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+input {
+  border: 1px rgb(185, 185, 185) solid;
+  height: 30px;
+  border-radius: 3px;
+  font-family:Arial, FontAwesome;
+  width: 50%;
+  min-width: 140px;
+}
+
+.padre {
+  text-align: center;
+  overflow: auto;
+}
+
+.line {
+  display: inline-table;
+}
+
+.form-container {
+  width: 80%;
+}
+
+svg, span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+button {
+  border-radius: 2px;
+  border: rgb(106, 86, 194) solid;
+  background-color: rgb(106, 86, 194);
+  color: white;
+  font-size: small;
+  height: 100%;
+  width: 110px;
+}
+
+.box-container {
+  border: rgba(151, 149, 149, 0.692) 1px solid;
+  width: 80%;
+
+  max-width: 940px;
+  margin:auto;
+  min-width: 360px;
+  position:relative;
+  background-color: white;
+}
+
